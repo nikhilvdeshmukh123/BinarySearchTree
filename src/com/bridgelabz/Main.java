@@ -19,11 +19,10 @@ public class Main {
         binary.insert(67);
 
         binary.inorderTraversal(binary.root);
-        int value = binary.size(binary.root);
-        if(value == 13)
-            System.out.println("\nAll the elements are added.");
+        binary.searchNode(binary.root, 63);
+        if(BinarySearchTree.flag)
+            System.out.println("\nElement is present");
         else
-            System.out.println("\nBinary tree incomplete.");
-
+            System.out.println("\nElement is not present");
     }
 }
